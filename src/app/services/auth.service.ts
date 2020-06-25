@@ -13,7 +13,7 @@ export class AuthService {
   public registerUsers(user):Observable<any>{
     return this.http.post<any>(this.registerUrl,user);
   }
-  public signinUsers(user):Observable<any>{
+   public signinUsers(user):Observable<any>{
     return this.http.post<any>(this.signinUrl,user);
   }
 }
