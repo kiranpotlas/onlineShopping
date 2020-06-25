@@ -1,0 +1,21 @@
+<div class="reg">
+    <h1 [innerText]='title'></h1>
+        <input type="text" name="firstname" placeholder="FirstName" #firstname id="firstname" ><br>
+        <input type="text" name="lastname" placeholder="LastName" #lastname id="lastname" ><br>
+        <input type="text" name="age" placeholder="Age" #age id="age" ><br>
+        <input type="text" name="nationality" placeholder="Nationality" #nationality id="nationality" ><br>
+        <input type="text" name="location" placeholder="Location" #location id="location" ><br>
+        <input type="text" name="email" placeholder="Email" #email id="email"><br><br>
+        <button class="btn btn-primary" (click)='sendData(firstname,lastname,age,nationality,location,email)'>Register</button>
+</div><br><br><br>
+
+<div>
+    <input type="text" name="sample" id="sample" (click)="sampleData($event)">
+</div>
+<br><br><br>
+<h3>Two way data binding using ngmodel</h3>
+<div>
+    <input type="text" name="data" id="data" [(ngModel)]='info'>
+    <h5>{{info}}</h5>
+</div>
+<br><br><br>

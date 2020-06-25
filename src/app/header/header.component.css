@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    background-color:blueviolet;
+    border-color: black;
+
+}
+span{
+    padding: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    font-size: 20px;
+    }

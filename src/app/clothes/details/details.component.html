@@ -1,0 +1,35 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">User</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let user of users'>
+        <th scope="row">1</th>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.website}}</td>
+    </tr>
+     </tbody>
+  </table>
+  
+  <br><br><br>
+  <div class="card-group" >
+      <div class="row">
+    <div class="card" *ngFor="let post of posts" style="max-width: 33%" >
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.body}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago by userId {{post.id}}</small></p>
+      </div>
+      </div>
+    </div>
+    </div>

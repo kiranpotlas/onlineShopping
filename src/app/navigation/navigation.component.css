@@ -1,0 +1,17 @@
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+.container, .container-md, .container-sm {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-brand{
+    color: #002bff;
+    font-family: -webkit-body;
+    font-size: xx-large;
+    font-weight: 600;
+    font-variant-caps: petite-caps;
+    text-emphasis: double-circle;
+}

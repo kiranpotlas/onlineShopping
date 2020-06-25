@@ -1,0 +1,9 @@
+body{
+    background-color: burlywood;
+}
+p{
+    font-size: 45px;
+    text-align: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

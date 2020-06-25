@@ -1,0 +1,9 @@
+h1{
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    font-family: -webkit-body;
+    font-variant: petite-caps;
+    color: orangered;
+}

@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid red;
+    margin:8%;
+    color:green;
+    text-align: center;
+    padding: 20px;
+    
+}
+table,th,td{
+    border: 1px solid brown;
+    padding:5px;
+    margin:15px;
+    color: black;
+    margin-left: 40%;
+    font-family: -webkit-body;
+}
+h5{
+color: blue;
+margin-left:55%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
