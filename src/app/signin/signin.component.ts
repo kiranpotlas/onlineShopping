@@ -12,10 +12,10 @@ public signinData={};
   constructor(private authSrvsignin:AuthService, private _router:Router) { }
   
   ngOnInit(){
+    this.signinUser();
   }
 public signinUser():void{
-  console.log(this.signinData);
-  this.authSrvsignin.signinUsers(this.signinData).subscribe(
+  this.authSrvsignin.signinUser(this.signinData).subscribe(
     res=>{
       console.log(res);
       if(res.auth && res.token){

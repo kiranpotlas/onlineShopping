@@ -20,7 +20,8 @@ import { ClothesService} from './clothes/clothes.service';
 import { DetailsService } from './clothes/details/details.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
-// import { MaterialsService } from './services/materials.service';
+import { MaterialsService } from './services/materials.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { SignupComponent } from './signup/signup.component';
   imports: [
     BrowserModule,AppRoutesModule,FormsModule,HttpClientModule
   ],
-  providers: [ClothesService,DetailsService],
+  providers: [ClothesService,DetailsService,AuthService,MaterialsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

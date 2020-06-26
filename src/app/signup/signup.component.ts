@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -6,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-   public registerData={};
-  constructor() { }
+   public registerData:any={};
+  constructor(private registerSrv:AuthService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+  this.registerUser();
   }
 public registerUser():void{
-  console.log(this.registerData);
-  
+  this.registerSrv.registerUser(this.registerData).subscribe(
+    res=>{
+    console.log(res);
+    this.registerData=res;
+    },
+    err=>{
+      console.log(err);
+     }
+  );
+   
 }
 }

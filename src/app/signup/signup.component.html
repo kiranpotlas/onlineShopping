@@ -27,8 +27,8 @@
             <input type="text" id="lastName" [(ngModel)]='registerData.lastName' name="lastName" class="form-control" placeholder="LastName" required="">
             <input type="text" id="dob" [(ngModel)]='registerData.dob' name="dob" class="form-control" placeholder="DOB" required="" >
             <input type="email" id="email" [(ngModel)]='registerData.email'  name="email" class="form-control" placeholder="Email address" required="" autofocus="">
-            <input type="password" id="Password" [(ngModel)]='registerData.password' name="password" class="form-control" placeholder="Password" required="">
-            <input type="text" id="cnfPassword" [(ngModel)]='registerData.cnfPassword' name="cnfPassword" class="form-control" placeholder="Conform Password" required="">
+            <input type="password" id="Password" [(ngModel)]='registerData.password' name="pwd" class="form-control" placeholder="Password" required="">
+            <input type="text" id="cnfPassword" [(ngModel)]='registerData.cnfPassword' name="cnfPwd" class="form-control" placeholder="Conform Password" required="">
             <button class="btn btn-success btn-block" (click)='registerUser()' type="submit"><i class="fas fa-sign-in-alt"></i> Sign Up</button>
             
             <hr>

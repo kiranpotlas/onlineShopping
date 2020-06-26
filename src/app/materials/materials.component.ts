@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { MaterialsService } from '../services/materials.service';
+import { MaterialsService } from '../services/materials.service';
 
 @Component({
   selector: 'app-materials',
@@ -7,20 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./materials.component.css']
 })
 export class MaterialsComponent implements OnInit {
-  // materials:any=[];
-  // constructor(private materialSrv:MaterialsService) { }
+  public materials:any={};
+  constructor(private materialSrv:MaterialsService) { }
 
   ngOnInit(){
-    // return this.materialSrv.getMaterials().subscribe(
-    //   res=>{
-    //     console.log(res);
-    //     this.materials=res;
-    //   },
-    //   err=>{
-    //     console.log(err);
-        
-    //   }
-    // )
+    this.getMaterials();
   }
-
+  public getMaterials():void{
+   this.materialSrv.getMaterials().subscribe(
+   res=>{
+       console.log(res);
+       this.materials=res;
+      },
+    err=>{
+       console.log(err);
+       }
+     );
+  }
 }

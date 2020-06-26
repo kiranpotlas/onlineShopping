@@ -6,14 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl ='http://localhost:4080/api/';
+  private baseUrl ='https://localhost:4200/';
   private registerUrl= this.baseUrl+'register';
   private signinUrl= this.baseUrl+'signin';
   constructor(private http:HttpClient) { }
-  public registerUsers(user):Observable<any>{
+  public registerUser(user):Observable<any>{
     return this.http.post<any>(this.registerUrl,user);
   }
-   public signinUsers(user):Observable<any>{
+   public signinUser(user):Observable<any>{
     return this.http.post<any>(this.signinUrl,user);
   }
 }
